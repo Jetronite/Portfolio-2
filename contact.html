@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Jethro Awa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Captain Jet</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" data-testid="test-contact-name" id="name" title="Enter your name" placeholder="Enter your name" required>
+
+      <label>Gmail</label>
+      <input type="email" data-testid="test-contact-email" id="email" title="Enter your email" placeholder="Enter your email" required>
+
+      <label>Subject</label>
+      <input type="subject" data-testid="test-contact-subject" id="subject" title="Enter your Subject" placeholder="Enter your subject" required></textarea>
+
+      <label>Message</label>
+      <input type="message" data-testid="test-contact-message" id="message" title="Enter your message" placeholder="Enter your Message" required></textarea>
+
+      <p id="error-message" data-testid="test-contact-message"></p>
+
+      <p id="confirmation-message" data-testid="test-contact-success"></p>
+
+      <button type="submit" data-testid="test-contact-submit" class="btn">Send Message</button>
+    </form>
+    
+  </section>
+
+  <footer>
+    <p>Let’s build something great together 🚀</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
